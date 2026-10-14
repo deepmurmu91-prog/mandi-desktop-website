@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>আমার প্রথম ওয়েবসাইট</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f0f4f8;
+        color: #222;
+    }
+
+    header {
+        background: #075985;
+        color: white;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    nav {
+        background: #0f172a;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+    .card {
+        background: white;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px #00000015;
+    }
+
+    button {
+        background: #0284c7;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    footer {
+        background: #0f172a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+
+</head><body><header>
+    <h1>আমার প্রথম ওয়েবসাইট</h1>
+    <p>GitHub দিয়ে ওয়েবসাইট তৈরি শেখা</p>
+</header>
+
+<nav>
+    <a href="#home">হোম</a>
+    <a href="#about">আমাদের সম্পর্কে</a>
+    <a href="#contact">যোগাযোগ</a>
+</nav>
+
+<main id="home">
+
+    <section class="card">
+        <h2>স্বাগতম!</h2>
+        <p>এটি আমার তৈরি প্রথম ওয়েবসাইট।</p>
+
+        <button onclick="showMessage()">
+            এখানে ক্লিক করো
+        </button>
+
+        <p id="message"></p>
+    </section>
+
+    <section class="card" id="about">
+        <h2>আমাদের সম্পর্কে</h2>
+        <p>আমরা HTML, CSS এবং JavaScript শিখছি।</p>
+    </section>
+
+    <section class="card" id="contact">
+        <h2>যোগাযোগ</h2>
+        <p>এটি একটি প্রশিক্ষণমূলক ওয়েবসাইট।</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 My First Website</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").textContent =
+            "অভিনন্দন! তোমার ওয়েবসাইট ঠিকভাবে কাজ করছে।";
+    }
+</script>
+
+</body>
+  </html>
